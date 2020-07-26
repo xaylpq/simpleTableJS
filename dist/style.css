@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 20px auto;
+}
+
+.header__textarea {
+    display: flex;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    padding: 8px;
+    background-color: #f4f5f6;
+    border: 1px solid #cacfd5;
+    border-radius: 5px;
+}
+
+.header__btn {
+    display: flex;
+    margin: 10px auto;
+    padding: 10px 38px;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+    background-color: #ba0d37;
+    color: #f4f5f6;
+    border: 1px solid #cacfd5;
+    border-radius: 5px;
+}
+
+.header__btn:active {
+    background-color: #f4f5f6;
+    color: #ba0d37;
+    border: 1px solid #ba0d37;
+}
+
+table {
+    text-align: center;
+    background-color: #f4f5f6;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+td {
+    width: 150px;
+    cursor: default;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-sort {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #333;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #ba0d37;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#save-btn {
+    float: right;
+    margin: 5% 20%;
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+    background-color: #169712;
+    color: #f4f5f6;
+    border: 1px solid #cacfd5;
+    border-radius: 5px;
+}
+
+#save-btn:active {
+    background-color: #f4f5f6;
+    color: #169712;
+    border: 1px solid #169712;
+}

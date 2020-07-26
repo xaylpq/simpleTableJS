@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tabular Data Editor | xaylpq</title>
+</head>
+
+<body>
+  <div class="container">
+      <textarea type="text" name="text-input" id="text-input" class="header__textarea"
+        placeholder="input json string..." cols="35" rows="5"></textarea>
+      <button id="btn-parse" class="header__btn">Parse</button>
+  </div>
+  <section class="container">
+    <table id="table">
+      <thead>
+        <th><button class="btn-sort sort-names">NAME &#8595;&#8593;</button></th>
+        <th><button class="btn-sort sort-type">TYPE &#8595;&#8593;</button></th>
+        <th>COLOR</th>
+        <th> </th>
+      </thead>
+      <tbody>
+        <!-- there will be rows -->
+      </tbody>
+    </table>
+    <button id="save-btn">Save Local</button>
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
