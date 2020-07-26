@@ -108,7 +108,9 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', function() {
     // get data from Local Storage
-    Object(_modules_createTable__WEBPACK_IMPORTED_MODULE_4__["default"])(JSON.parse(localStorage.getItem("table")));
+    if (localStorage.getItem('table') !== null) {
+        Object(_modules_createTable__WEBPACK_IMPORTED_MODULE_4__["default"])(JSON.parse(localStorage.getItem("table")));
+    }
 
     // parse input text value
     const text = document.querySelector('#text-input'),
@@ -131,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const saveBtn = document.querySelector('#save-btn');
     saveBtn.addEventListener('click', () => {
         Object(_modules_createJson__WEBPACK_IMPORTED_MODULE_3__["default"])();
-        alert('Please! Enter correct JSON string!');
+        alert('Data was saved successfully!');
     });
 
     // .pattern(/^\[({(,?\s?"[\wа-яА-ЯёЁ]+"\s?:\s?"[^".?]*")+},?\s?)+\]$/ //если потребуется валидация JSON объектов
